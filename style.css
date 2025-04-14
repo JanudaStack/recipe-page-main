@@ -68,6 +68,7 @@ header p {
 }
 
 .prep-header h3 {
+    margin-bottom: 2vh;
     margin-left: 10px;
     font-family: var(--subheading-font);
     font-size: 18px;
@@ -75,6 +76,8 @@ header p {
 }
 
 .prep-details {
+    display: grid;
+    gap: 5px;
     margin-left: 35px;
     color: var(--items-font-color);
     font-family: var(--subheading-font);
@@ -83,21 +86,33 @@ header p {
     font-weight: 600;
 }
 
+.ing-list {
+    display: grid;
+    gap: 10px;
+}
+
+.ins-list {
+    display: grid;
+    gap: 10px;
+}
+
 .section-header h2 {
+    padding-bottom: 2.5vh;
     font-family: var(--heading-font);
     font-weight: 500;
 }
 
 .section-header p {
+    margin-bottom: 3vh;
     font-family: var(--subheading-font);
 }
 
 .nutrition-list {
-    display: flex;
-    justify-content: space-around;
+    display: inline-flex;
 }
 
 .nutrition-list ul {
+    margin-right: 60px;
     list-style: none;
 }
 

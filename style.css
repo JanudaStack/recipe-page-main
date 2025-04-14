@@ -3,3 +3,111 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    /* Font familes */
+    --heading-font: 'Young Serif', serif;
+    --subheading-font: 'Outfit', sans-serif;
+
+    /* Font colors */
+    --main-heading-font-color: hsl(330, 2.86%, 13.73%);
+    --heading-font-color: hsl(14, 45%, 36%);
+    --subheading-font-color: hsl(332, 51%, 32%);
+    --items-font-color: hsl(30, 10%, 34%);
+
+    /* Font sizes */
+    --main-heading-font-size: 24px;
+    --p-font-size: 16px;
+}
+
+ul {
+    color: var(--items-font-color);
+    margin-left: 35px;
+    font-family: var(--subheading-font);
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.recipe-img {
+    display: flex;
+}
+
+.recipe-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* align-items: center; */
+}
+
+header h1 {
+    font-family: var(--heading-font);
+    font-size: var(--main-heading-font-size);
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+header p {
+    font-family: var(--subheading-font);
+    color: var(--items-font-color);
+}
+
+.prep-header h3 {
+    margin-left: 10px;
+    font-family: var(--subheading-font);
+    font-size: 18px;
+    color: var(--subheading-font-color);
+}
+
+.prep-details {
+    margin-left: 35px;
+    color: var(--items-font-color);
+    font-family: var(--subheading-font);
+}
+.prep-details span {
+    font-weight: 600;
+}
+
+.prep-time h3 {
+}
+
+.section-header {
+}
+
+.section-header h2 {
+    font-family: var(--heading-font);
+    font-weight: 500;
+}
+
+.section-header p {
+    font-family: var(--subheading-font);
+}
+
+.nutrition-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nutrition-list ul {
+    list-style: none;
+}
+
+.calories {
+    font-weight: 600;
+    color: var(--subheading-font-color);
+}

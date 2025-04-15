@@ -18,12 +18,18 @@
     /* Font sizes */
     --main-heading-font-size: 24px;
     --p-font-size: clamp(16px, 2.5vw, 18px);
+
+    /* Background colors */
+    --bg-color: hsl(332, 54%, 93%);
 }
 
 ul {
     color: var(--items-font-color);
     margin-left: 35px;
     font-family: var(--subheading-font);
+}
+body {
+    background-color: var(--bg-color);
 }
 
 article {
@@ -136,10 +142,17 @@ header p {
 }
 
 @media (min-width: 725px) {
+    .page-wrapper {
+        max-width: 45em;
+        background-color: #fff;
+        border-radius: 16px;
+        padding: 1.75rem;
+        margin: 4vh auto;
+    }
     .recipe-img {
         display: flex;
         justify-content: center;
-        padding: 50px;
+        padding: 10px;
     }
     .recipe-img img {
         max-width: 100%;
@@ -147,6 +160,6 @@ header p {
         border-radius: 20px;
     }
     .page-content {
-        padding: 70px;
+        padding: 10px;
     }
 }

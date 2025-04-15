@@ -123,6 +123,11 @@ header p {
     color: var(--subheading-font-color);
 }
 
+.attribution {
+    text-align: center;
+    font-family: var(--subheading-font);
+}
+
 @media (min-width: 725px) {
     .recipe-img {
         display: flex;

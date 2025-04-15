@@ -17,7 +17,7 @@
 
     /* Font sizes */
     --main-heading-font-size: 24px;
-    --p-font-size: 16px;
+    --p-font-size: clamp(16px, 2.5vw, 18px);
 }
 
 ul {
@@ -34,6 +34,7 @@ article {
 
 .recipe-img {
     display: flex;
+    justify-content: center;
 }
 
 .recipe-img img {
@@ -60,7 +61,7 @@ header h1 {
     font-family: var(--heading-font);
     font-size: var(--main-heading-font-size);
     font-weight: 500;
-    font-size: 1.8rem;
+    font-size: clamp(1.5rem, 2.5vw, 3rem);
 }
 
 header p {
@@ -72,11 +73,12 @@ header p {
     margin-bottom: 2vh;
     margin-left: 10px;
     font-family: var(--subheading-font);
-    font-size: 18px;
+    font-size: 20px;
     color: var(--subheading-font-color);
 }
 
 .prep-details {
+    font-size: var(--p-font-size);
     display: grid;
     gap: 5px;
     margin-left: 35px;
@@ -88,11 +90,13 @@ header p {
 }
 
 .ing-list {
+    font-size: var(--p-font-size);
     display: grid;
     gap: 10px;
 }
 
 .ins-list {
+    font-size: var(--p-font-size);
     list-style: decimal;
     display: grid;
     gap: 10px;
@@ -106,11 +110,13 @@ header p {
 }
 
 .section-header p {
+    font-size: var(--p-font-size);
     margin-bottom: 3vh;
     font-family: var(--subheading-font);
 }
 
 .nutrition-list {
+    font-size: var(--p-font-size);
     display: inline-flex;
 }
 

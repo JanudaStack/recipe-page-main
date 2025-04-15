@@ -132,4 +132,7 @@ header p {
         height: auto;
         border-radius: 20px;
     }
+    .page-content {
+        padding: 70px;
+    }
 }

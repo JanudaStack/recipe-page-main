@@ -49,6 +49,10 @@ section {
     width: 100%;
 }
 
+.page-wrapper {
+    background-color: #fff;
+}
+
 .recipe-img {
     display: flex;
     justify-content: center;
@@ -156,7 +160,6 @@ header p {
 @media (min-width: 725px) {
     .page-wrapper {
         max-width: 45em;
-        background-color: #fff;
         border-radius: 16px;
         padding: 1.75rem;
         margin: 4vh auto;

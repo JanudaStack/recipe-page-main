@@ -93,6 +93,7 @@ header p {
 }
 
 .ins-list {
+    list-style: decimal;
     display: grid;
     gap: 10px;
 }

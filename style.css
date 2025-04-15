@@ -20,7 +20,7 @@
     --p-font-size: clamp(16px, 2.5vw, 18px);
 
     /* Background colors */
-    --bg-color: hsl(332, 54%, 93%);
+    --bg-color: hsla(332, 54%, 93%, 0.349);
 }
 
 ul {
@@ -28,14 +28,25 @@ ul {
     margin-left: 35px;
     font-family: var(--subheading-font);
 }
+
+hr {
+    width: 100%;
+    margin-top: 5vh;
+    background-color: #030303;
+    height: 1px;
+}
 body {
-    background-color: var(--bg-color);
+    background-color: hsl(30, 54%, 90%);
 }
 
 article {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+section {
+    width: 100%;
 }
 
 .recipe-img {
@@ -123,7 +134,8 @@ header p {
 
 .nutrition-list {
     font-size: var(--p-font-size);
-    display: inline-flex;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .nutrition-list ul {
@@ -161,5 +173,10 @@ header p {
     }
     .page-content {
         padding: 10px;
+    }
+    .prep-time {
+        padding: 20px 0;
+        border-radius: 10px;
+        background-color: var(--bg-color);
     }
 }
